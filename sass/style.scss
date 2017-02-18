@@ -1,0 +1,117 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+$max_ancho: 400px;
+$max_alto: 600px;
+
+@mixin border-radius($radio) {
+	-ms-border-radius: $radio;
+	-moz-border-radius: $radio;
+	-webkit-border-radius: $radio;
+	-o-border-radius: $radio;
+	border-radius: $radio;
+}
+
+@mixin crear_circulo( $diametro, $color ) {
+	display:inline-block;
+	background-color: $color;
+	height: $diametro;
+	width: $diametro;
+	margin: 0;
+	padding: 0;
+	@include border-radius(50%)
+}
+
+.receta {
+	margin: auto;
+	width: $max_ancho;
+	height: $max_alto;
+	border: 0.5px solid rgba(0, 0, 0, 0.3);
+
+	.imagen {
+		position: relative;
+		display: inline-block;
+		width: $max_ancho;
+		height: $max_alto/2;
+		margin: 0;
+		background-image: url("../images/pizza.jpg");
+		background-size: cover;
+
+		a {
+			position: absolute;
+			bottom: -20px;
+			right: 20px;
+			@include crear_circulo(40px, #e7ef00);
+			font-size: 20px;
+			font-weight: bolder;
+			color: white;
+			text-align: center;
+			i {
+				display: inline-block;
+				margin: 10px 0;
+			}
+		}
+	}
+
+	.pie {
+		display: inline-block;
+		margin: 0;
+		width: $max_ancho;
+		height: $max_alto/2;
+		h1 {
+			margin: 0 0 0 20px;
+			font-size: 20px;
+			font-weight: lighter;
+			text-transform: uppercase;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		ul.prop {	
+			margin: 10px 0 0 20px;
+			padding: 0;
+			
+			
+			li {
+				display: inline-block;
+				margin-right: 10px;
+
+				i {
+					margin-right: 5px;
+				}
+			}
+		}
+
+		ul.stars {
+			margin: 10px 0 0 20px;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				color: yellow;
+			}
+		}
+
+		h2 {
+			margin: 30px 0 0 20px;
+			font-size: 16px;
+			font-weight: lighter;
+		}
+
+		a {
+			display: block;
+			width: 100px;
+			height: 25px;
+			padding: 0;
+			line-height: 25px;
+			color: white;
+			background-color: #ef0057;
+			text-align: center;
+			text-decoration: none;
+			font-weight: bolder;
+			text-transform: uppercase;
+			font-size: 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 50px auto;
+			box-shadow: 0px 7px 10px 0 grey;
+		}
+	}
+}

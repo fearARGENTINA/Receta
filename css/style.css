@@ -1,0 +1,83 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+.receta {
+  margin: auto;
+  width: 400px;
+  height: 600px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3); }
+  .receta .imagen {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    margin: 0;
+    background-image: url("../images/pizza.jpg");
+    background-size: cover; }
+    .receta .imagen a {
+      position: absolute;
+      bottom: -20px;
+      right: 20px;
+      display: inline-block;
+      background-color: #e7ef00;
+      height: 40px;
+      width: 40px;
+      margin: 0;
+      padding: 0;
+      -ms-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bolder;
+      color: white;
+      text-align: center; }
+      .receta .imagen a i {
+        display: inline-block;
+        margin: 10px 0; }
+  .receta .pie {
+    display: inline-block;
+    margin: 0;
+    width: 400px;
+    height: 300px; }
+    .receta .pie h1 {
+      margin: 0 0 0 20px;
+      font-size: 20px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif; }
+    .receta .pie ul.prop {
+      margin: 10px 0 0 20px;
+      padding: 0; }
+      .receta .pie ul.prop li {
+        display: inline-block;
+        margin-right: 10px; }
+        .receta .pie ul.prop li i {
+          margin-right: 5px; }
+    .receta .pie ul.stars {
+      margin: 10px 0 0 20px;
+      padding: 0; }
+      .receta .pie ul.stars li {
+        display: inline-block;
+        color: yellow; }
+    .receta .pie h2 {
+      margin: 30px 0 0 20px;
+      font-size: 16px;
+      font-weight: lighter; }
+    .receta .pie a {
+      display: block;
+      width: 100px;
+      height: 25px;
+      padding: 0;
+      line-height: 25px;
+      color: white;
+      background-color: #ef0057;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 50px auto;
+      box-shadow: 0px 7px 10px 0 grey; }
+
+/*# sourceMappingURL=style.css.map */
